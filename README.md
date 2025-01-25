@@ -23,13 +23,15 @@
  &emsp; The design implemented in this repository is made with silicon NPN transistors as I wouldn’t have to worry about inconsistent germanium transistors and anything power supply wise to be able to run the pedal. If you swapped power polarity on a PNP circuit to work with common pedal power supplies, it causes more noise, hiss, motorboating, and more issues. In the circuit design section there will be a additional MAX1044 circuit listed that will provide clean negative ground power for use with the original circuit.<h6>
 
 ## Parts List:
+This list is for the design I am going with for this pedal with pull down resistors, fuzz switch, and NPN silicon transistors
 
 - 1 BC109C NPN Transistor (BC108C, BC109, BC183L, BC209C, 2n2222, 2n3904 are also commonly used)
-- 1 5nF capacitor
+- 2 5nF capacitor
 - 1 10nF capacitor
 - 2 47µF electrolytic capacitors
 - 1 470KΩ resistor
 - 1 68kΩ resistor
 - 1 3.9KΩ resistor
+- 2 1MΩ resitors
 - 1 10kΩ Logarithmic Potentiometer
 - 2 1/4" female guitar jacks
