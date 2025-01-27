@@ -42,11 +42,11 @@ This list is for the design I am going with for this pedal with pull down resist
 ![NPN Rangemaster Photo Schematic](https://github.com/user-attachments/assets/274c27b1-f66e-4340-8639-237044abe555)
 
 ## NPN Dallas Rangemaster with Pull Down Resistors and Fuzz Switch
-- Added pull down resitors and input capacitor switch
+- Added pull down resistors and input capacitor switch
 - Pull down resistors added for reduced electric noise and useability with other 
   pedals
 - The switching of input capacitors changes the frequency response of the pedal, 
-  making the Rangemaster more versitile. This is the same mod used in Tony Iommi of 
+  making the Rangemaster more versatile. This is the same mod used in Tony Iommi of 
   Black Sabbath's Rangemaster pedal 
 ![NPN Rangemaster With Pull Down Resistors and Fuzz Switch](https://github.com/user-attachments/assets/7ab12ce3-b1fd-4c44-8157-ac07448587ef)
 
