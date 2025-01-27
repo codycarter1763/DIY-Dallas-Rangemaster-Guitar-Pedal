@@ -57,4 +57,17 @@ This list is for the design I am going with for this pedal with pull down resist
 ## MAX1044 Power Supply Mod
 - If wanting to use the PNP circuit with a modern pedal power supply, use this mod to 
   supply clean isolated power needed for this circuit to run properly
+  <br/>
   ![MAX1044 Power Supply Mod](https://github.com/user-attachments/assets/54b3af85-1719-47b3-8c6f-930616138a26)
+
+
+
+# Circuit Board Design
+- Fully rendered 3D model of the circuit board to be installed in the Rangemaster pedal
+- Check in the file storage above for the attached gerber files for reproduction
+
+![Dallas Rangemaster NPN v2](https://github.com/user-attachments/assets/dd32d197-6259-4e2d-a18c-268e5f16a3e6) 
+
+
+# Closing Remarks
+As you can see, the Rangemaster's iconic tone can be created and modified with a very simple circuit without paying a huge premium for an original model. There are countless more mods out there on the internet done by different companies and guitarists alike to add something new to it's sound. As I test and discover new mods, I will update the repository as nessesary.
