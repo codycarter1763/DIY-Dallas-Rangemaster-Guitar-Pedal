@@ -1,4 +1,5 @@
 # DIY Dallas Rangemaster Guitar Pedal
+*Will update once constructed*
 <br/>
 <h1>About</h1>
  <h6> 
@@ -15,6 +16,14 @@
 </p>
 
  &emsp;  <h6>
+
+<h1>Quick Thanks To PCBWay</h1>
+<h6> &emsp;My project was gladly sponsored by PCBWay. PCBWay has provided professional solutions to students and electronics enthusiasts, and I believe that their sponsorship would be essential to easy and reliable construction of Dallas Rangemaster PCBs. Such boards will allow for removability in case of failure or modification. It’s an honor to share the results with the PCBWay community and contribute our project to their platform.  <br>
+ <br><h6>
+
+![image](https://github.com/user-attachments/assets/3253581c-9c10-4329-aa81-215169151ca1)
+
+
 
  <h1>Parts List</h1>
  <h6> &emsp;Originally the Dallas Rangemaster incorporated PNP germanium transistors. This was because PNP germanium transistors were easier to make consistently and didn’t have any major leakage current like their NPN germanium counterpart. PNP was not an issue back then, since the pedal ran off a 9V battery. The problem comes from the standard center negative power supplies used for guitar pedals not being able to work with PNP without a major redesign of the circuit. This issue was fixed with NPN transistors being put in the circuit, making no difference sonically.
