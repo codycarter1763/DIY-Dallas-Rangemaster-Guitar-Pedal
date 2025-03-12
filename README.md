@@ -69,7 +69,70 @@ This list is for the design I am going with for this pedal with pull down resist
   <br/>
   ![MAX1044 Power Supply Mod](https://github.com/user-attachments/assets/54b3af85-1719-47b3-8c6f-930616138a26)
 
+# Circuit Analysis
+For my analysis, I calculated these values based on the NPN version of the Dallas Rangemaster. The PNP version of this circuit will have different values but will effectively produce a similar output. <br/>
 
+## Input Impedance 
+For input impedance, consider the voltage divider into the base of the transistor and transistor impedance. <br/>
+R1 // 68k // NPN Impedance (40,625) = 24kΩ input impedance
+<br/>
+<br/>
+NPN Impedance calculated using <br/>
+rπ = β / gm where β = 200 (BC109) and gm = Icollector / Vthermal <br/>
+<br/>
+To calculate Ic, <br/>
+Vb = Vin(R2 / R2 + R1) = 9(68k / 470k + 68k) = 1.2V <br/>
+<br/>
+With silicon transistors, Vbe = 0.7 <br/>
+So Ve = Vb - Vbe = 1.2 - 0.7 = 0.5V <br/>
+Ie = Ve / Re = 0.5 / 3.9k = 128μA which approximetly equals Ic <br/>
+<br/>
+With Ic, NPN impedance can finally be calculated below <br/>
+rπ = β / gm = β(Vt) / Ic = 0.026(200) / 128μA = 40,625Ω
+<br/>
+<br/> 
+Such low input impedance loads the guitar pickups and draws more current from the guitar pickups. This leads to less sensitivity, more compression, and bass frequencies attenuated. Hence, where the Dallas Rangemaster gets its signiture treble boosted sound.
+<br/>
+<br/> 
+## Frequency Response and Gain
+The frequency response is influenced with three different capacitor resistor networks, with the input network being the one that affects the tone the most.
+<br/> 
+<br/> 
+### Input Network C2
+Fc = 1 / 2π(C2)(Input Impedance) = 1 / 2π(5nF)(24000) = 1326Hz
+<br/> 
+### Emitter Network C3
+Fc = 1 / 2π(C3)(R3) = 1 / 2π(47μ)(3.9k) = 0.86Hz
+<br/> 
+### Output Network C6
+Fc = 1 / 2π(C6)(1Meg Load) = 1 / 2π(10nF)(1Meg) = 15.9Hz
+<br/> 
+### Gain
+At full volume, the Dallas Rangemaster with BC109 silicon transistors has a max gain of about 34dB
+![Dallas Rangemaster Gain Response](https://github.com/user-attachments/assets/b34e59cd-6f28-4b85-b234-595f3b7e4ea3)
+<br/> 
+<br/> 
+## Output Waveform
+Below is the output waveform of the Dallas Rangemaster at various volume levels. Assymetrical clipping is observed through the unequal waveforms peak to peak, such clipping leads to a more dynamic, harmonic rich, and presence. 
+<br/> 
+Interestingly enough, if a PNP transistor was used instead of an NPN visualized below, the waveforms would be flipped where the upper half is sine and the bottom is clipped.
+![Dallas Rangemaster Output Waveform](https://github.com/user-attachments/assets/b4437083-9850-4b0a-a525-fd96129d74d1)
+
+# Effect of Mods
+## Input Capacitor Switch
+A common mod used by Tony Iommi of Black Sabbath is to add a switch to add capacitors in parallel to the 5nF capacitor. This effectively allows more bass to enter the amplifier and leads to a warmer tone similar to a fuzz pedal depending on components. 
+<br/> 
+As shown below comparing three different capacitor values, you can see the varying response.
+### 5nF
+1 / 2π(5nF)(24000) = 1326Hz
+<br/> 
+### 10nF
+1 / 2π(10nF)(24000) = 663Hz
+<br/> 
+### 15nF
+1 / 2π(15nF)(24000) = 442Hz
+<br/> 
+![Dallas Rangemaster Input Capacitor Mod](https://github.com/user-attachments/assets/3dd741f9-918b-4cd2-a2e0-4d43c38e1190)
 
 # Circuit Board Design
 - Fully rendered 3D model of the circuit board to be installed in the Rangemaster pedal
