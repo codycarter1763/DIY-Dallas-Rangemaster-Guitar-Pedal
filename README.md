@@ -115,7 +115,7 @@ At full volume, the Dallas Rangemaster with BC109 silicon transistors has a max 
 ## Output Waveform
 Below is the output waveform of the Dallas Rangemaster at various volume levels. Assymetrical clipping is observed through the unequal waveforms peak to peak, such clipping leads to a more dynamic, harmonic rich, and presence. 
 <br/> 
-Interestingly enough, if a PNP transistor was used instead of an NPN visualized below, the waveforms would be flipped where the upper half is sine and the bottom is clipped.
+Interestingly enough, if a PNP transistor was used instead of an NPN visualized below, the waveforms would be flipped where the upper half is clipped and the bottom is sine.
 ![Dallas Rangemaster Output Waveform](https://github.com/user-attachments/assets/b4437083-9850-4b0a-a525-fd96129d74d1)
 
 # Effect of Mods
