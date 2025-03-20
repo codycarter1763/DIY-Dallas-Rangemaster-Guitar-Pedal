@@ -1,5 +1,6 @@
 # DIY Dallas Rangemaster Guitar Pedal
-*Will update once constructed*
+![IMG_4138](https://github.com/user-attachments/assets/5cd5cbef-1e8d-4e6e-90aa-cd2f16a68fe5)
+
 <br/>
 <h1>About</h1>
  <h6> 
